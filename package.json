@@ -1,0 +1,39 @@
+{
+	"name": "ntl-focal-migrate",
+	"description": "Find all your sites that don’t use the new Focal build image and migrate them.",
+	"version": "0.0.1",
+	"license": "MIT",
+	"bin": {
+		"ntl-focal-migrate": "index.js"
+	},
+	"author": {
+		"name": "Jason Lengstorf",
+		"email": "jason@lengstorf.com",
+		"url": "https://jason.af"
+	},
+	"keywords": [
+		"ntl-focal-migrate",
+		"Jason Lengstorf"
+	],
+	"files": [
+		"index.js",
+		"utils"
+	],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"cli-alerts": "^1.2.2",
+		"cli-handle-error": "^4.4.0",
+		"cli-handle-unhandled": "^1.1.1",
+		"cli-meow-help": "^2.0.2",
+		"cli-welcome": "^2.2.2",
+		"execa": "^5.1.1",
+		"meow": "^9.0.0",
+		"netlify-cli": "^6.8.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.3.2"
+	}
+}
