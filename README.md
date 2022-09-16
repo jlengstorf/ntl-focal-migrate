@@ -6,13 +6,19 @@ This is a small CLI to allow you to migrate all your sites to the Focal build im
 
 This CLI makes multiple requests to the Netlify API, so it can take a few seconds to complete. Please be patient!
 
-First, check which sites are not running the Focal image on your account:
+### First, check which sites are not running the Focal image on your account:
 
 ```bash
 npx ntl-focal-migrate --list --account "Your Account Name"
 ```
+### Don't know your account name? Run the following command. 
+If you're signed into multiple teams, make sure to read the note at the next step. 
 
-Next, update the build settings for your site with this command:
+```bash
+netlify status
+```
+
+### Next, update the build settings for your site with this command:
 
 ```bash
 npx ntl-focal-migrate --update --account "Your Account Name"
